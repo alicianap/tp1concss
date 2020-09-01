@@ -1,0 +1,38 @@
+*{
+    font-family: 'Lucida Sans';
+}
+header, footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 400px;
+    height: 350px;
+}
+th{
+    text-align: left;
+}
+.vinculo{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.redes{
+    color: white;
+    font-size: 2em;
+}
+.sucursales a:hover{
+    color: red;
+}
+/*footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+}*/
