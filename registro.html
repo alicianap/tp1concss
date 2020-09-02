@@ -21,29 +21,40 @@
         <section>
            <h2>Formulario de Registro</h2>
            <form action="show_data.html" target="_blank">
-               <label for="firstname">Nombre: </label><input type="text" name="firstname" placeholder="Ingrese su nombre aquí...">  <br><br>
-               <label for="lastname">Apellido: </label><input type="text" name="lastname" placeholder="Ingrese su apellido aquí...">  <br><br>
-               <label for="street">Dirección: </label><input type="text" name="address" placeholder="Ingrese su dirección aquí...">  <br><br>
-               <label for="city">Ciudad: </label><input type="text" name="city" value="C.A.B.A">  <br><br>
-               <label for="zipcode">Código Postal: </label><input type="text" name="zipcode" placeholder="Ingrese su código postal aquí...">  <br><br>
-               <label for="birthdate">Fecha de Nacimiento (dd/mm/aaaa): </label><input type="text" name="birthdate" >  <br><br>
-
+               <label for="firstname">Nombre: </label><input type="text" name="firstname" placeholder="Ingrese su nombre aquí..."><label for="lastname">  Apellido: </label><input type="text" name="lastname" placeholder="Ingrese su apellido aquí...">  <br><br>
+               <p>Dirección :</p>
+               <label for="street">Calle: </label><input type="text" name="address" placeholder="Ingrese la calle aquí..."><label for="number">  Número</label><input type="text" name="address" placeholder="Ingrese el número aquí...">
+               <label for="city">  Ciudad: </label><input type="text" name="city" value="C.A.B.A"><label for="zipcode">  Código Postal: </label><input type="text" name="zipcode" placeholder="Ingrese su código postal aquí..."><br>  <br><br>
+               <label for="phone">Teléfono: </label><input type="text" name="tel" placeholder="Ingrese su nro de teléfono aquí..."><label for="birthdate">  Fecha de Nacimiento (dd/mm/aaaa): </label><input type="text" name="birthdate"><label for="email">  Mail: </label>
+               <input type="email" name="email" placeholder="Ingrese aquí su email..."><label for="password">  Clave :</label><input type="password" name="password"><label for="link">  Link del TP3: </label><input type="url" name="url"><br><br>             
                <p>Género
                   <input type="radio" name="gender" value="hombre" checked>Hombre
                   <input type="radio" name="gender" value="mujer" checked>Mujer
                   <input type="radio" name="gender" value="otro" checked>Otro
+               </p><br>
+               <p>Conocimientos previos: 
+                  <input type="checkbox" name="estudio" value="html">HTML
+                  <input type="checkbox" name="estudio" value="css">CSS
+                  <input type="checkbox" name="estudio" value="bootstrap">Bootstrap
+                  <input type="checkbox" name="estudio" value="javascript">JavaScript
+                  <input type="checkbox" name="estudio" value="typescript">TypeScript              
+                  <input type="checkbox" name="estudio" value="angular">Angular
+                  <input type="checkbox" name="estudio" value="basededatos">Base de Datos
+                  <input type="checkbox" name="estudio" value="python">Python
+                  <input type="checkbox" name="estudio" value="djiango">Djiango
                </p>
-               <p>Estudios
-                  <input type="checkbox" name="estudio" value="primarios" >Primarios
-                  <input type="checkbox" name="estudio" value="secundarios" >Secundarios
-                  <input type="checkbox" name="estudio" value="terciarios">Terciarios
-                  <input type="checkbox" name="estudio" value="universitarios" >Universitarios
-                  <input type="checkbox" name="estudio" value="otro" >Otro              
-               </p>
-               <input type="submit" value="ENVIAR">
-           </form>
-           <p>Si Ud. hace clic en el botón ENVIAR, sus datos serán enviados a la página "show_data.html"</p>
-           <br><br><br><br><br><br><br><br>
+               <p>Estudios  <select name="estudios">
+                   <option value="1">Primarios</option>
+                   <option value="2">Secundarios</option>
+                   <option value="3">Terciarios</option>
+                   <option value="4">Universitarios</option>
+                   <option value="5">Otros</option>
+                   </select>
+                </p>
+                <p>Comentarios :</p>
+                <textarea name="comentario"></textarea><br><br><br>
+                <input type="submit" value="ENVIAR">
+           </form><br>
         </section>  
         <footer>
             <p style="text-align: center"><a href="facebook.com" target="_blank" class="redes"><i class="fab fa-facebook"></i></a>
